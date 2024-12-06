@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Stacks components vertically */
-  align-items: center; /* Optional: Centers components horizontally */
-  box-sizing: border-box; /* Ensures consistent sizing */
+  flex-direction: column;
+  align-items: center; 
+  box-sizing: border-box; 
 } */
 
 .header {
@@ -35,9 +35,7 @@
   top: 10px; /* Adjust the distance from the top of the screen */
   right: 10px;
   height: 30px;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 .button .arrow {
