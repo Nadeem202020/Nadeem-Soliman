@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "newbanner": {
+    "banner": {
       "type": "newbanner",
       "settings": {}
     },
@@ -22,7 +22,7 @@
     }
   },
   "order": [
-    "newbanner",
+    "banner",
     "main"
   ]
 }
