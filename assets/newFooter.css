@@ -1,0 +1,11 @@
+.footer {
+  background-color: #f5f5f5; /* Grey background color */
+  color: rgb(2, 2, 2);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  width: 100%; /* Full width */
+  justify-content: center;
+  margin-top: 0; /* Adjust this value to move the banner lower */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
