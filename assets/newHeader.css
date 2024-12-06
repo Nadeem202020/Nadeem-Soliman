@@ -10,6 +10,7 @@
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  position: relative; /* Required for absolute positioning inside the header */
 }
 
 /* Title should be centered and can be adjusted */
@@ -45,9 +46,10 @@
   transform: scale(1.05);
 }
 
-/* Vision text, positioned on the left side */
+/* Vision text, positioned on the left side within the header */
 .vision {
   position: absolute;
-  left: 15px;
-  top: 15px;
+  left: 15px; /* Adjust the position as needed */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust for true centering */
 }
