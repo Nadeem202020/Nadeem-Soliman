@@ -12,10 +12,16 @@
     "banner": {
       "type": "newbanner",
       "settings": {}
-    }
+    },"header":{
+    "type":"header-custom",
+    "settings":{}
+  }
   },
+  
+  
   "order": [
-    "banner"
+    "banner",
+    "header"
 
   ]
 }
