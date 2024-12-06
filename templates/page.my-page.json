@@ -9,12 +9,14 @@
  */
 {
   "sections": {
-    "header":{
-    "type":"header-custom",
-    "settings":{}
-  }
+    "header": {
+      "type": "header-custom",
+      "settings": {}
+    },
+    "middle": {
+      "type": "middle",
+      "settings": {}
+    }
   },
-  "order": [
-    "header"
-  ]
+  "order": ["header", "middle"]
 }
