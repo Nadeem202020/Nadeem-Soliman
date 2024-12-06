@@ -16,7 +16,11 @@
     "middle": {
       "type": "middle",
       "settings": {}
+    },
+    "footer": {
+      "type": "newfooter",
+      "settings": {}
     }
   },
-  "order": ["header", "middle"]
+  "order": ["header", "middle", "footer"]
 }
