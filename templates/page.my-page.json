@@ -9,10 +9,8 @@
  */
 {
   "sections": {
-    "banner": {
-      "type": "newbanner",
-      "settings": {}
-    },"header":{
+    
+    "header":{
     "type":"header-custom",
     "settings":{}
   }
@@ -20,7 +18,6 @@
   
   
   "order": [
-    "banner",
     "header"
 
   ]
