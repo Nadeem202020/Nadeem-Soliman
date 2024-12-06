@@ -1,7 +1,15 @@
-<div>Footer</div>
-{% schema %}
-{
-  "name": "Section name",
-  "settings": []
-}
-{% endschema %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{ shop.name }}
+      | SVG Test
+    </title>
+    <link rel="stylesheet" href="{{ 'newFooter.css' | asset_url }}">
+  </head>
+  <body>
+    <span>{{ 'newFooter.text' | t }}</span>
+  </body>
+</html>
