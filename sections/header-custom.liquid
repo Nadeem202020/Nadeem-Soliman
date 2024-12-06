@@ -1,5 +1,36 @@
-<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{ shop.name }}
+      | SVG Test
+    </title>
+    <link rel="stylesheet" href="{{ 'newHeader.css' | asset_url }}">
+  </head>
+  <body>
+    <div class="header">
+      <span class="title">{{ 'general.find_gift' | t }}</span>
+      <!-- Assuming you want to use a translation key -->
+      <button class="button">
+        {{ 'buttons.choose_gift' | t -}}
+        <span class="arrow">→</span>
+        <!-- Translation key for button text -->
+      </button>
+      <span class="vision">{{ 'general.tisso_vision' | t }}</span>
+      <!-- Translation key for text -->
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+{% comment %} <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'compoqnent-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -642,3 +673,4 @@
   ]
 }
 {% endschema %}
+ {% endcomment %}
