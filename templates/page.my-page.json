@@ -20,7 +20,11 @@
     "footer": {
       "type": "newfooter",
       "settings": {}
+    },
+    "text": {
+      "type": "text",
+      "settings": {}
     }
   },
-  "order": ["header", "middle", "footer"]
+  "order": ["header", "middle", "footer", "text"]
 }
