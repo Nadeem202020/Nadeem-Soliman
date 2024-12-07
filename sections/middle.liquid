@@ -158,8 +158,10 @@
                     class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
                   >
                 {% endcomment %}
-                {{- block.settings.button_label_2 | escape -}}
-                </a>
+                {% comment %}
+                  {{- block.settings.button_label_2 | escape -}}
+                  </a>
+                {% endcomment %}
               {%- endif -%}
             </div>
         {%- endcase -%}
