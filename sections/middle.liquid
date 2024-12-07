@@ -2,24 +2,36 @@
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
-    @media screen and (max-width: 749px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before,
-      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
+      @media screen and (max-width: 749px) {
+        #Banner-{{ section.id }} {
+      background-image: url('{{ 'assets/Background.svg' | asset_url }}');
+      background-size: cover;  /* Ensures the image covers the banner */
+      background-position: center; /* Ensures the image is centered */
+      background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+      height: 100vh;  /* Set the height to 100% of the viewport height */
+      width: 100%;  /* Ensure the width is 100% */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;  /* White text color for better contrast */
+    },
+        #Banner-{{ section.id }} .banner__media::before,
+        #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+          padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+          content: '';
+          display: block;
+        }
       }
-    }
 
-    @media screen and (min-width: 750px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
+      @media screen and (min-width: 750px) {
+        #Banner-{{ section.id }}::before,
+        #Banner-{{ section.id }} .banner__media::before {
+          padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+          content: '';
+          display: block;
+        }
       }
-    }
   {%- endstyle -%}
 {%- endif -%}
 
