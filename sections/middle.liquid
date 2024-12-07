@@ -7,10 +7,13 @@
   <div class="banner__media media">
     <!-- Ensure the Background.svg is displayed -->
     <img
-      src="{{ 'Background.svg' | asset_url }}"
-      alt="Background Image"
-      class="banner__media-image"
-    >
+  src="{{ 'Background.svg' | asset_url }}"
+  alt="Background Image"
+  width="800"   <!-- Replace 800 with your SVG's width -->
+  height="600"  <!-- Replace 600 with your SVG's height -->
+  class="banner__media-image"
+/>
+
   </div>
 
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
