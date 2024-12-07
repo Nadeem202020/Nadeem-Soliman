@@ -3,7 +3,7 @@
   background-color: #f5f5f5;
   color: rgb(14, 0, 0);
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   justify-content: space-between; /* Distribute items with space between them */
   align-items: center; /* Vertically center the items */
