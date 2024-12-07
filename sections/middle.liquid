@@ -28,6 +28,29 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
+{%- style -%}
+  /* Banner styling */
+  #Banner-{{ section.id }} {
+    background-image: url('{{ 'assets/Background.svg' | asset_url }}');
+    background-size: cover;  /* Ensures the image covers the banner */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    height: 100vh;  /* Set the height to 100% of the viewport height */
+    width: 100%;  /* Ensure the width is 100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;  /* White text color for better contrast */
+  }
+
+  /* Optional: Styling for any text or content inside the banner */
+  #Banner-{{ section.id }} .banner-content {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+  }
+{%- endstyle -%}
 
 {%- liquid
   assign full_width = '100vw'
