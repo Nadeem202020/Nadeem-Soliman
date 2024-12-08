@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "header": {
+      "type": "header-custom",
+      "settings": {}
+    },
     "middle": {
       "type": "middle",
       "settings": {}
@@ -26,5 +30,5 @@
       "settings": {}
     }
   },
-  "order": ["middle", "footer", "text", "grid"]
+  "order": ["header", "middle", "footer", "text", "grid"]
 }
