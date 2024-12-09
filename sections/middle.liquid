@@ -122,7 +122,7 @@
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
-                {% include 'snippets/button.liquid',
+                {% include 'button',
                   button_label: block.settings.button_label_1,
                   button_link: block.settings.button_link_1
                 %}
@@ -136,6 +136,7 @@
             </div>
         {%- endcase -%}
       {%- endfor -%}
+      {% include 'text', text_content: section.settings.custom_text %}
     </div>
   </div>
 </div>
