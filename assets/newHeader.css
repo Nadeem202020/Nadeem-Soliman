@@ -19,6 +19,8 @@
   flex: 1; /* Makes the title grow to occupy available space */
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 10px;
 }
 
 /* Button styles */
