@@ -122,7 +122,7 @@
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
-                {% include 'button',
+                {% include 'snippets/button.liquid',
                   button_label: block.settings.button_label_1,
                   button_link: block.settings.button_link_1
                 %}
