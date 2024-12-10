@@ -9,7 +9,6 @@
 
 .title {
   font-size: 2em; /* Adjust font size as needed */
-  font-weight: bold;
   margin-bottom: 0.5em; /* Space between title and tagline */
 }
 
@@ -22,6 +21,7 @@
   font-size: 12px; /* Font size */
   cursor: pointer;
   display: inline-flex; /* Aligns text and arrow inline */
+  align-items: center; /* Centers items vertically */
   justify-content: center; /* Centers items horizontally */
   gap: 15px; /* Space between text and arrow */
   position: absolute; /* Position the button relative to the nearest positioned ancestor */
