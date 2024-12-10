@@ -7,7 +7,7 @@
 }
 
 .banner__box {
-  text-align: center;
+  text-align: left;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
@@ -282,8 +282,8 @@
   display: flex;
   position: relative;
   width: 100%;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
@@ -353,8 +353,8 @@
   padding: 4rem 1.5rem;
   position: relative;
   height: fit-content;
-  align-items: left;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
