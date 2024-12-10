@@ -9,9 +9,7 @@
 
 .title {
   font-size: 1em; /* Adjust font size as needed */
-  /* text-align: center;  Remove this - flexbox handles centering */
   flex-grow: 1; /* Allows title to take up available space */
-
   text-align: center; /* Center everything horizontally */
 }
 
