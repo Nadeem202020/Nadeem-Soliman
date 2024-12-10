@@ -15,11 +15,14 @@
   position: relative;
 }
 
-/* Title should be centered and can be adjusted */
-.title {
+.title-wrapper {
   text-align: center;
   flex: 1;
-  margin: 0 auto; /* Centers horizontally */
+  margin: 0; /* Remove auto margin if needed */
+}
+.title {
+  text-align: center;
+  margin: 0;
   padding: 0;
 }
 
