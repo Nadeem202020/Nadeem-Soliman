@@ -19,13 +19,6 @@
             "heading_size": "h0"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Bozoo",
-            "text_style": "h0"
-          }
-        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -38,7 +31,7 @@
           }
         }
       },
-      "block_order": ["heading", "button", "text"],
+      "block_order": ["heading", "button"],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
