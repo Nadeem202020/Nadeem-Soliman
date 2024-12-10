@@ -38,7 +38,11 @@
           }
         }
       },
-      "block_order": ["heading", "button", "text"],
+      "block_order": [
+        "heading",
+        "button",
+        "text"
+      ],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -63,5 +67,10 @@
       "settings": {}
     }
   },
-  "order": ["middle", "footer", "text", "grid"]
+  "order": [
+    "middle",
+    "footer",
+    "text",
+    "grid"
+  ]
 }
