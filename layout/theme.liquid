@@ -225,10 +225,10 @@
       *,
       *::before,
       *::after {
+        box-sizing: inherit;
       }
 
       html {
-        box-sizing: border-box;
         font-size: calc(var(--font-body-scale) * 62.5%);
         height: 100%;
       }
@@ -305,8 +305,6 @@
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
-
-    {% sections 'custom-header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
