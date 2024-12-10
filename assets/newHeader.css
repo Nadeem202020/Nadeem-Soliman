@@ -13,11 +13,6 @@
   margin-bottom: 0.5em; /* Space between title and tagline */
 }
 
-.tagline {
-  font-size: 1em;
-  margin-bottom: 1em; /* Space between tagline and button */
-}
-
 .newButton {
   background-color: #ffcc00; /* Adjust color if needed */
   color: #000; /* Black text */
