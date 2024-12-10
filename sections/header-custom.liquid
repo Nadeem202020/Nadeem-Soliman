@@ -1,14 +1,15 @@
 {{ 'newHeader.css' | asset_url | stylesheet_tag }}
-
-<div class="title">{{ 'newHeader.find_gift' | t }}</div>
-<!-- Assuming you want to use a translation key -->
-<button class="newButton">
-  {{ 'newButton.choose_gift' | t -}}
-  <span class="arrow">→</span>
-  <!-- Translation key for button text -->
-</button>
-<span class="vision">{{ 'newHeader.tisso_vision' | t }}</span>
-<!-- Translation key for text -->
+<div class="newHeader">
+  <div class="title">{{ 'newHeader.find_gift' | t }}</div>
+  <!-- Assuming you want to use a translation key -->
+  <button class="newButton">
+    {{ 'newButton.choose_gift' | t -}}
+    <span class="arrow">→</span>
+    <!-- Translation key for button text -->
+  </button>
+  <span class="vision">{{ 'newHeader.tisso_vision' | t }}</span>
+  <!-- Translation key for text -->
+</div>
 
 {% comment %}
   <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
