@@ -2,7 +2,7 @@
   background-color: #f5f5f5;
   color: #000; /* Black text */
   text-align: center; /* Center everything horizontally */
-  height: 150px; /* Adjust height as needed */
+  height: 20px; /* Adjust height as needed */
   padding: 0 20px; /* Added some padding */
   position: relative; /* Allows absolute positioning of children */
 }
