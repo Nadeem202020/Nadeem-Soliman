@@ -1,9 +1,5 @@
-.button-text-container {
-  display: flex;
-  align-items: center;
-}
-
-.button-text {
-  margin-right: 10px;
-  font-size: 16px;
+.text {
+  position: absolute;
+  left: 50px;
+  font-weight: bold;
 }
