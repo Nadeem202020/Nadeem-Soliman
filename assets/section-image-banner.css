@@ -455,11 +455,19 @@
 }
 
 .banner__buttons {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 45rem;
-  word-break: break-word;
+  background-color: black; /* Button background */
+  color: white; /* Text color */
+  border: none; /* Removes border */
+  padding: 12px 24px; /* Button padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-flex; /* Aligns text and arrow inline */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 15px; /* Space between text and arrow */
+  width: 200px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 @media screen and (max-width: 749px) {
