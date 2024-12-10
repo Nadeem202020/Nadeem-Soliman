@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Bozoo",
+            "text_style": "h0"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -31,7 +38,7 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": ["heading", "button", "text"],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -52,7 +59,7 @@
       "settings": {}
     },
     "grid": {
-      "type": "grid",
+      "type": "main-collection-product-grid",
       "settings": {}
     }
   },
