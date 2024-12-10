@@ -19,6 +19,10 @@
             "heading_size": "h0"
           }
         },
+        "text": {
+          "type": "text",
+          "settings": {}
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -31,7 +35,11 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button",
+        "text"
+      ],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -56,5 +64,10 @@
       "settings": {}
     }
   },
-  "order": ["middle", "footer", "text", "grid"]
+  "order": [
+    "middle",
+    "footer",
+    "text",
+    "grid"
+  ]
 }
