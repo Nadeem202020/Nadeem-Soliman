@@ -8,8 +8,15 @@
  * ------------------------------------------------------------
  */
 {
+  "name": "Custom Header",
   "type": "header",
-  "name": "Group name",
-  "sections": {},
-  "order": []
+  "sections": {
+    "custom-header-section": {
+      "type": "header-custom",
+      "settings": {}
+    }
+  },
+  "order": [
+    "custom-header-section"
+  ]
 }
