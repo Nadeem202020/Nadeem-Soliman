@@ -450,7 +450,8 @@
   color: black; /* Sets the text color to black */
   text-align: center;
   position: absolute;
-  left: -500px;
+  left: -400px;
+  top: 100px;
 }
 
 .banner__box .banner__heading + * {
