@@ -353,8 +353,8 @@
   padding: 4rem 1.5rem;
   position: relative;
   height: fit-content;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
