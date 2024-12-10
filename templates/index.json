@@ -38,7 +38,7 @@
           }
         }
       },
-      "block_order": ["heading", "button", "text"],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
