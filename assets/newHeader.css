@@ -12,6 +12,7 @@
   /* text-align: center;  Remove this - flexbox handles centering */
   flex-grow: 1; /* Allows title to take up available space */
   top: 20px;
+  text-align: center; /* Center everything horizontally */
 }
 
 .newButton {
