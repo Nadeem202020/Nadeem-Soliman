@@ -1,17 +1,8 @@
 {{ 'newHeader.css' | asset_url | stylesheet_tag }}
 
-<div class="newHeader">
-  <div class="title-wrapper">
-    <span class="title">{{ 'newHeader.find_gift' | t }}</span>
-  </div>
-  <div class="button-vision">
-    <button class="newButton">
-      {{ 'newButton.choose_gift' | t }}
-      <span class="arrow">→</span>
-    </button>
-    <span class="vision">{{ 'newHeader.tisso_vision' | t }}</span>
-  </div>
-</div>
+<div class="title">The Gift Guide</div>
+<div class="tagline">Find the ideal gift for your loved ones.</div>
+<button class="newButton">CHOOSE GIFT →</button>
 
 {% comment %}
   <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
