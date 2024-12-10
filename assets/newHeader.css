@@ -18,8 +18,8 @@
 /* Title should be centered and can be adjusted */
 .title {
   text-align: center;
-  flex: 1; /* Makes the title grow to occupy available space */
-  margin: 0;
+  flex: 1;
+  margin: 0 auto; /* Centers horizontally */
   padding: 0;
 }
 
