@@ -21,7 +21,10 @@
         },
         "text": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "text": "The Gift Guide",
+            "text_style": "h0"
+          }
         },
         "button": {
           "type": "buttons",
@@ -35,11 +38,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button",
-        "text"
-      ],
+      "block_order": ["heading", "button", "text"],
       "settings": {
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -64,10 +63,5 @@
       "settings": {}
     }
   },
-  "order": [
-    "middle",
-    "footer",
-    "text",
-    "grid"
-  ]
+  "order": ["middle", "footer", "text", "grid"]
 }
