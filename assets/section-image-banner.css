@@ -455,7 +455,6 @@
 }
 
 .banner__buttons {
-  background-color: black; /* Button background */
   color: white; /* Text color */
   border: none; /* Removes border */
   padding: 12px 24px; /* Button padding */
