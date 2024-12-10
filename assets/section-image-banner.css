@@ -472,14 +472,14 @@
 .banner__buttons .arrow {
   font-size: 20px; /* Arrow size */
 }
+.banner__buttons:hover {
+  background-color: #333; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
 
 @media screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
-  }
-  .button2:hover {
-    background-color: #333; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
   }
 
   .banner--content-align-mobile-center .banner__buttons--multiple > * {
