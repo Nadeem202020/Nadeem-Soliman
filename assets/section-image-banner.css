@@ -449,7 +449,7 @@
 .banner__heading {
   margin-bottom: 0;
   color: black; /* Sets the text color to black */
-  text-align: center;
+  text-align: left;
 }
 
 .banner__box .banner__heading + * {
