@@ -26,8 +26,8 @@
   justify-content: center; /* Centers items horizontally */
   gap: 15px; /* Space between text and arrow */
   position: absolute; /* Position the button relative to the nearest positioned ancestor */
-  top: 10px; /* Adjust the distance from the top of the screen */
-  right: 10px;
+  top: 20px; /* Adjust the distance from the top of the screen */
+  right: 20px;
   height: 30px;
 }
 
