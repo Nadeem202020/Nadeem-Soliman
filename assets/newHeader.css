@@ -1,34 +1,30 @@
 .newHeader {
   background-color: #f5f5f5;
-  color: #000; /* Black text color */
-  height: 50px;
-  padding: 0 1rem; /* Added padding for better spacing */
+  color: rgb(14, 0, 0);
+  text-align: center;
+  height: 50px !important;
+  padding: 0 !important;
   display: flex;
-  justify-content: space-between; /* Distribute space between title and button/vision */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
+  position: relative;
 }
 
-.title-wrapper {
-  text-align: center;
-  flex: 1; /* Title takes up available space */
-}
-
+/* Title should be centered and can be adjusted */
 .title {
-  font-size: 1rem;
-  font-weight: bold;
+  text-align: center;
+  flex: 1; /* Makes the title grow to occupy available space */
+  margin: 0;
+  padding: 0;
 }
 
-.button-vision {
-  display: flex;
-  align-items: center;
-}
-
+/* Button styles */
 .newButton {
   background-color: #fff544;
-  color: #000; /* Black text color */
+  color: #000000;
   border: none;
   padding: 10px 20px;
   font-size: 12px;
@@ -39,7 +35,6 @@
   gap: 15px;
   height: 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-left: 1rem;
 }
 
 .button .arrow {
@@ -50,9 +45,9 @@
   background-color: #333;
   transform: scale(1.05);
 }
-
 .vision {
-  margin-left: 1rem; /* Added margin for spacing */
-  font-size: 0.8rem; /* Reduced font size */
-  font-weight: normal;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
