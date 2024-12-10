@@ -282,8 +282,8 @@
   display: flex;
   position: relative;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
   z-index: 2;
 }
 
