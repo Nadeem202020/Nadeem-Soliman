@@ -58,4 +58,5 @@ align-items: center; / Centers items vertically */
   left: 50px;
   top: 50%;
   transform: translateY(-50%);
+  font-weight: bold;
 }
