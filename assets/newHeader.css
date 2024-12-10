@@ -45,4 +45,5 @@
   position: absolute; /* Position the button relative to the nearest positioned ancestor */
   top: 15px; /* Adjust the distance from the top of the screen */
   left: 10px;
+  font-weight: bold;
 }
