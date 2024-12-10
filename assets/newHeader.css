@@ -9,7 +9,8 @@
 
 .title {
   font-size: 1em; /* Adjust font size as needed */
-  text-align: center;
+  /* text-align: center;  Remove this - flexbox handles centering */
+  flex-grow: 1; /* Allows title to take up available space */
 }
 
 .newButton {
