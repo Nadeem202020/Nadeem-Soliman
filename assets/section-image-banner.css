@@ -469,6 +469,9 @@
   width: 200px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
+.banner__buttons .arrow {
+  font-size: 20px; /* Arrow size */
+}
 
 @media screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__buttons--multiple {
