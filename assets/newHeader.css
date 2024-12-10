@@ -10,6 +10,7 @@
 .title {
   font-size: 1em; /* Adjust font size as needed */
   flex-grow: 1; /* Allows title to take up available space */
+  top: 10px;
   text-align: center; /* Center everything horizontally */
 }
 
