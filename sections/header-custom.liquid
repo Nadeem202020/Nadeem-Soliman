@@ -1,27 +1,17 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{ shop.name }}
-      | SVG Test
-    </title>
-    <link rel="stylesheet" href="{{ 'newHeader.css' | asset_url }}">
-  </head>
-  <div class="newHeader">
-    <div class="title-wrapper">
-      <span class="title">{{ 'newHeader.find_gift' | t }}</span>
-    </div>
-    <div class="button-vision">
-      <button class="newButton">
-        {{ 'newButton.choose_gift' | t }}
-        <span class="arrow">→</span>
-      </button>
-      <span class="vision">{{ 'newHeader.tisso_vision' | t }}</span>
-    </div>
+{{ 'newHeader.css' | asset_url }}
+
+<div class="newHeader">
+  <div class="title-wrapper">
+    <span class="title">{{ 'newHeader.find_gift' | t }}</span>
   </div>
-</html>
+  <div class="button-vision">
+    <button class="newButton">
+      {{ 'newButton.choose_gift' | t }}
+      <span class="arrow">→</span>
+    </button>
+    <span class="vision">{{ 'newHeader.tisso_vision' | t }}</span>
+  </div>
+</div>
 
 {% comment %}
   <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
