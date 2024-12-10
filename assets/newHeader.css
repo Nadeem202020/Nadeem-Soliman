@@ -14,14 +14,22 @@
 }
 
 .newButton {
-  background-color: #ffcc00; /* Adjust color if needed */
-  color: #000; /* Black text */
-  border: none;
+  background-color: #fff544; /* Blue button */
+  color: #000000;
+  border: none; /* Removes border */
   padding: 10px 20px;
-  font-size: 1em;
+  border: none;
+  font-size: 12px; /* Font size */
   cursor: pointer;
-  text-decoration: none;
-  border-radius: 5px; /* Rounded corners */
+  display: inline-flex; /* Aligns text and arrow inline */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 15px; /* Space between text and arrow */
+  position: absolute; /* Position the button relative to the nearest positioned ancestor */
+  top: 10px; /* Adjust the distance from the top of the screen */
+  right: 10px;
+  height: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 .newButton:hover {
