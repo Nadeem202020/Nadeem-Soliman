@@ -1,8 +1,8 @@
 .text {
-  text-align: left; /* Center the text */
-  margin: 40px 0; /* Add top and bottom margins */
-  font-size: 1.2em; /* Adjust the font size */
-  color: #333; /* Adjust the text color */
+  text-align: left;
+  margin: 40px 0 40px 0; /* Adjust as needed for top/bottom/left margin if necessary */
+  margin-right: 20px; /* Add a 20px right margin */
+  font-size: 1.2em;
+  color: #333;
   font-weight: bold;
-  margin-left: -50;
 }
