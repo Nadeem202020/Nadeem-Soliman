@@ -1,8 +1,8 @@
 .text {
   text-align: left;
-  text-indent: 20px; /* Indent the first line by 20px */
+  margin: 40px 0; /* Adjust as needed for top/bottom/left margin if necessary */
+  padding-right: 20px; /* Add a 20px right padding */
   font-size: 1.2em;
   color: #333;
   font-weight: bold;
-  padding-right: 20px;
 }
