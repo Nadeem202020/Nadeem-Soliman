@@ -126,10 +126,11 @@
                 placeholder_image: placeholder_image
               %}
             </li>
+            <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
           {%- endfor -%}
         {%- endfor -%}
       </ul>
-      <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons">
           <button
