@@ -460,7 +460,7 @@
 }
 
 .banner__buttons {
-  background-color: black; /* Button background */
+  background-color: #333; /* Button background */
   color: white; /* Text color */
   border: none; /* Removes border */
   padding: 1px 2px; /* Button padding */
@@ -473,7 +473,6 @@
   gap: 15px; /* Space between text and arrow */
   width: 180px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-  transform: scale(1.05);
 }
 
 .banner__buttons .arrow {
