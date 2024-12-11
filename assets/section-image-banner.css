@@ -9,7 +9,7 @@
 .banner__box {
   text-align: left;
   position:relative;
-  top:20px;
+  top:40px;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
