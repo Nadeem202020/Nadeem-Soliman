@@ -1,3 +1,4 @@
+{{ 'grid.css' | asset_url | stylesheet_tag }}
 <div class="image-grid">
   {% for product in collections.featured.products %}
     <div class="image-container" onclick="openPopup('{{ product.title }} - {{ product.description | strip_html }}')">
