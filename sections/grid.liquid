@@ -1,12 +1,20 @@
 {{ 'grid.css' | asset_url | stylesheet_tag }}
+
 <div class="image-grid">
   {% for product in collections.featured.products %}
-    <div class="image-container" onclick="openPopup('{{ product.title }} - {{ product.description | strip_html }}')">
+    <div class="image-container" onclick="openPopup('{{ product.title }}', '{{ product.description | strip_html }}')">
       <img
         src="{{ product.featured_image | img_url: 'medium' }}"
         alt="{{ product.title }}"
-        width="{{ product.featured_image.width }}"
-        height="{{ product.featured_image.height }}"
+        width="300"
+        <!--
+        Static
+        width
+        fallback
+        --
+      >
+      height="300"
+      <!-- Static height fallback -->
       >
     </div>
   {% endfor %}
@@ -19,3 +27,18 @@
     <p id="popup-text"></p>
   </div>
 </div>
+
+<!-- Include the JavaScript -->
+<script>
+  function openPopup(title, description) {
+    const popup = document.getElementById('popup');
+    const popupText = document.getElementById('popup-text');
+    popupText.innerHTML = `<strong>${title}</strong><br>${description}`;
+    popup.style.display = 'flex';
+  }
+
+  function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
+</script>
