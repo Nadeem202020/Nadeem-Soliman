@@ -474,16 +474,11 @@
   width: 180px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
-.banner__buttons:focus,
-.banner__buttons:active {
-  outline: none;
-  border: none;
-}
-.banner__buttons .button,
-.banner__buttons .button--secondary {
-  border: none;
-  outline: none;
-  box-shadow: none; /* Remove any box shadows creating a border effect */
+div.banner__buttons > a.button,
+div.banner__buttons > a.button--secondary {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .banner__buttons .arrow {
