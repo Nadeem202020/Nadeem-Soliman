@@ -473,7 +473,8 @@
   gap: 15px; /* Space between text and arrow */
   width: 180px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-  box-shadow: none;
+  border: none;
+  outline: none;
 }
 .banner__buttons .arrow {
   font-size: 20px; /* Arrow size */
