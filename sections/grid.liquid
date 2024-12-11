@@ -89,6 +89,7 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
+        {% assign skip_card_product_styles = false %}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -263,7 +264,7 @@
       "type": "range",
       "id": "products_to_show",
       "min": 2,
-      "max": 25,
+      "max": 6,
       "step": 1,
       "default": 4,
       "label": "t:sections.featured-collection.settings.products_to_show.label"
