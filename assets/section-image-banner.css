@@ -359,6 +359,7 @@
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
+  margin: 0;
 }
 
 .banner--mobile-bottom .banner__box {
@@ -454,7 +455,7 @@
 }
 
 .banner__box .banner__heading + * {
-  margin-top: 1rem;
+  margin: 0rem;
 }
 
 .banner__buttons {
