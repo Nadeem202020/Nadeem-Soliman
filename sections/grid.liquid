@@ -106,7 +106,6 @@
           >
             {% render 'card-product', card_product: product %}
           </li>
-          {%- assign skip_card_product_styles = true -%}
         {%- else -%}
           {%- for i in (1..section.settings.columns_desktop) -%}
             <li
