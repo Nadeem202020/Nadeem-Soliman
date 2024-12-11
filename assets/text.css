@@ -1,5 +1,5 @@
 .text {
-  text-align: center; /* Center the text */
+  text-align: left; /* Center the text */
   margin: 40px 0; /* Add top and bottom margins */
   font-size: 1.2em; /* Adjust the font size */
   color: #333; /* Adjust the text color */
