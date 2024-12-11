@@ -471,7 +471,7 @@
   align-items: center; /* Centers items vertically */
   justify-content: center; /* Centers items horizontally */
   gap: 15px; /* Space between text and arrow */
-  width: 180px;
+  width: 200px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 .banner__buttons .arrow {
