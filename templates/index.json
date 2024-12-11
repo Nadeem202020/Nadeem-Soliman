@@ -58,7 +58,7 @@
       "type": "text",
       "settings": {}
     },
-    "featured_collection": {
+    "grid": {
       "type": "grid",
       "settings": {
         "title": "Featured products",
@@ -87,5 +87,5 @@
       }
     }
   },
-  "order": ["middle", "footer", "text", "featured_collection"]
+  "order": ["middle", "footer", "text", "grid"]
 }
