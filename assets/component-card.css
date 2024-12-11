@@ -152,6 +152,21 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
+.card__information-volume-pricing-note--button,
+.card__information-volume-pricing-note--button.quantity-popover__info-button--icon-with-label {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-align: var(--text-alignment);
+  min-width: auto;
+}
+
+.card__information-volume-pricing-note--button:hover {
+  text-decoration: underline;
+}
+
 .card__information-volume-pricing-note--button
   + .global-settings-popup.quantity-popover__info {
   transform: initial;
