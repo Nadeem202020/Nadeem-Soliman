@@ -420,7 +420,7 @@
 }
 
 .banner__box > * + * {
-  margin-top: 1rem;
+  margin: 0;
 }
 
 .banner__box > *:first-child {
