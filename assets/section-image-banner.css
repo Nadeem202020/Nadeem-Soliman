@@ -409,7 +409,7 @@
 
 .banner__box > * + .banner__text {
   color: black;
-  white-space: pre-wrap;
+  margin: 0;
 }
 
 @media screen and (min-width: 750px) {
