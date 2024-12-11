@@ -301,10 +301,18 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
+    <div id="product-modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="modal-close">×</button>
+        <div id="product-modal-content"></div>
+      </div>
+    </div>
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
+
+    {% sections 'custom-header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
