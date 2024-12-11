@@ -117,21 +117,30 @@
     </div>
 
     <div class="product-grid">
-      {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
-        <div class="product-item">
-          <img
-            src="{{ product.featured_image | img_url: 'medium' }}"
-            alt="{{ product.title }}"
-            class="product-image"
-            data-product-id="{{ product.id }}"
-            width="{{ product.featured_image.width }}"
-            height="{{ product.featured_image.height }}"
-          >
-          height="300"
-          <!-- replace with your preferred height -->
-          >
-        </div>
-      {% endfor %}
+      {% if section.settings.collection.products.size > 0 %}
+        {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
+          <div class="product-item">
+            <img
+              src="{{ product.featured_image | img_url: 'medium' }}"
+              alt="{{ product.title }}"
+              class="product-image"
+              data-product-id="{{ product.id }}"
+              width="300"
+              <!--
+              You
+              can
+              adjust
+              this
+              --
+            >
+            height="300"
+            <!-- You can adjust this -->
+            >
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No products available in this collection.</p>
+      {% endif %}
     </div>
 
     <!-- Product Popup Modal -->
@@ -146,26 +155,28 @@
     </div>
 
     <script>
-      document.querySelectorAll('.product-image').forEach(function(image) {
-        image.addEventListener('click', function() {
-          var productId = image.getAttribute('data-product-id');
-          var product = {{ section.settings.collection.products | json }}.find(function(product) {
-            return product.id == productId;
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.product-image').forEach(function(image) {
+          image.addEventListener('click', function() {
+            var productId = image.getAttribute('data-product-id');
+            var product = {{ section.settings.collection.products | json }}.find(function(product) {
+              return product.id == productId;
+            });
+
+            // Display product details in the popup
+            document.getElementById('productTitle').innerText = product.title;
+            document.getElementById('popupImage').src = product.featured_image.src;
+            document.getElementById('productDescription').innerText = product.description;
+            document.getElementById('productPrice').innerText = product.price | money;
+
+            // Show the popup
+            document.getElementById('productPopup').style.display = 'flex';
           });
-
-          // Display product details in the popup
-          document.getElementById('productTitle').innerText = product.title;
-          document.getElementById('popupImage').src = product.featured_image.src;
-          document.getElementById('productDescription').innerText = product.description;
-          document.getElementById('productPrice').innerText = product.price | money;
-
-          // Show the popup
-          document.getElementById('productPopup').style.display = 'flex';
         });
-      });
 
-      document.getElementById('closePopup').addEventListener('click', function() {
-        document.getElementById('productPopup').style.display = 'none';
+        document.getElementById('closePopup').addEventListener('click', function() {
+          document.getElementById('productPopup').style.display = 'none';
+        });
       });
     </script>
   </div>
