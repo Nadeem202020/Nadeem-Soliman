@@ -252,9 +252,6 @@
 
   .banner:not(.banner--mobile-bottom) .button--secondary {
     --alpha-button-background: 0;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
   }
 
   .banner--stacked:not(.banner--mobile-bottom):not(.banner--adapt)
@@ -476,6 +473,42 @@
   gap: 15px; /* Space between text and arrow */
   width: 180px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Ensure no borders or outlines on all button states */
+.banner__buttons .button,
+.banner__buttons .button--secondary {
+  border: none; /* Remove any border */
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove box shadow */
+}
+
+/* Hover, focus, and active states */
+.banner__buttons .button:hover,
+.banner__buttons .button:focus,
+.banner__buttons .button:active,
+.banner__buttons .button--secondary:hover,
+.banner__buttons .button--secondary:focus,
+.banner__buttons .button--secondary:active {
+  border: none; /* Ensure no border in these states */
+  outline: none; /* Ensure no focus outline */
+  box-shadow: none; /* Ensure no shadows in these states */
+}
+
+/* Add specificity to target the link structure */
+.banner__buttons > a.button,
+.banner__buttons > a.button--secondary {
+  border: none; /* Remove any border */
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove shadow */
+}
+
+/* Reset pseudo-elements in case they cause border-like effects */
+.banner__buttons .button::before,
+.banner__buttons .button::after,
+.banner__buttons .button--secondary::before,
+.banner__buttons .button--secondary::after {
+  content: none; /* Ensure no pseudo-elements display */
 }
 
 .banner__buttons .arrow {
