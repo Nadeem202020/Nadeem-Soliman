@@ -382,6 +382,7 @@
   }
 
   .banner--desktop-transparent .button--secondary {
+    --alpha-button-background: 0;
   }
 
   .banner--desktop-transparent .content-container:after {
