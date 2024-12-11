@@ -473,9 +473,11 @@
   gap: 15px; /* Space between text and arrow */
   width: 180px;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-  border: none;
-  outline: none;
+  border: none; /* Explicitly removes border */
+  outline: none; /* Removes focus outline */
+  box-shadow: none; /* Resets any shadow that may mimic a border */
 }
+
 .banner__buttons .arrow {
   font-size: 20px; /* Arrow size */
 }
