@@ -1,0 +1,65 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const productGrid = document.querySelector('.product-grid'); // Get the grid container
+  if (!productGrid) return; //Exit early if grid not found
+
+  productGrid.addEventListener('click', function(event) {
+    if (event.target.tagName === 'IMG') { //Only trigger if image is clicked
+      event.preventDefault();
+      const productLink = event.target.closest('a'); //Find the closest ancestor 'a' tag
+      if(productLink){ //Make sure a link was actually found
+        fetchProductDetails(productLink.href);
+        showProductModal();
+      } else {
+        console.error("Could not find product link for clicked image.");
+      }
+    }
+  });
+
+  const productModal = document.getElementById('product-modal');
+  const modalContent = document.getElementById('product-modal-content');
+  const modalCloseButton = document.querySelector('.modal-close');
+
+
+  modalCloseButton.addEventListener('click', hideProductModal);
+
+  function showProductModal() {
+    productModal.classList.remove('hidden');
+    productModal.style.display = 'flex'; // Ensure modal displays correctly
+  }
+
+  function hideProductModal() {
+    productModal.classList.add('hidden');
+    productModal.style.display = 'none'; // Ensure modal hides correctly
+    modalContent.innerHTML = '';
+  }
+
+  async function fetchProductDetails(url) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const html = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+
+      // *** VERY IMPORTANT: Adapt these selectors to your theme ***
+      // Use your browser's developer tools to find the correct selectors for your theme.
+      // These selectors are examples only and will likely not work unless your theme's product page has an unusual structure.
+      const productTitle = doc.querySelector('title')?.textContent || 'Product Title';
+      const productImage = doc.querySelector('.product-single__main-image img')?.src || '';
+      const productDescription = doc.querySelector('#product-description')?.innerHTML || 'Product Description';
+      const productPrice = doc.querySelector('.product-price__price')?.innerHTML || '';
+
+      modalContent.innerHTML = `
+        <h3>${productTitle}</h3>
+        <img src="${productImage}" alt="${productTitle}" style="max-width: 100%;">
+        <p>${productDescription}</p>
+        <p class="price">${productPrice}</p>
+      `;
+    } catch (error) {
+      console.error("Error fetching product details:", error);
+      modalContent.innerHTML = "<p>Error loading product details.</p>";
+    }
+  }
+});
