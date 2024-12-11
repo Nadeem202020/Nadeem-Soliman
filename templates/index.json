@@ -59,7 +59,7 @@
       "settings": {}
     },
     "grid": {
-      "type": "grid",
+      "type": "featured-collection",
       "settings": {}
     }
   },
