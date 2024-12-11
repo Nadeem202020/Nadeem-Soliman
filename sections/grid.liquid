@@ -2,7 +2,12 @@
 <div class="image-grid">
   {% for product in collections.featured.products %}
     <div class="image-container" onclick="openPopup('{{ product.title }} - {{ product.description | strip_html }}')">
-      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+      <img
+        src="{{ product.featured_image | img_url: 'medium' }}"
+        alt="{{ product.title }}"
+        width="{{ product.featured_image.width }}"
+        height="{{ product.featured_image.height }}"
+      >
     </div>
   {% endfor %}
 </div>
