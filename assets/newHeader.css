@@ -45,6 +45,10 @@ align-items: center; / Centers items vertically */
   top: 10px;
 }
 
+.newButton .arrow {
+  font-size: 20px;
+}
+
 .newButton:hover {
   background-color: #333;
   transform: scale(1.05);
