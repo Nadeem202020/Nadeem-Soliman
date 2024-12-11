@@ -383,9 +383,6 @@
 
   .banner--desktop-transparent .button--secondary {
     --alpha-button-background: 0;
-    border: none; /* Explicitly removes border */
-    outline: none; /* Removes focus outline */
-    box-shadow: none; /* Resets any shadow that may mimic a border */
   }
 
   .banner--desktop-transparent .content-container:after {
@@ -463,7 +460,7 @@
 }
 
 .banner__buttons {
-  background-color: #333; /* Button background */
+  background-color: black; /* Button background */
   color: white; /* Text color */
   border: none; /* Removes border */
   padding: 1px 2px; /* Button padding */
