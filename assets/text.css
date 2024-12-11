@@ -3,4 +3,5 @@
   margin: 40px 0; /* Add top and bottom margins */
   font-size: 1.2em; /* Adjust the font size */
   color: #333; /* Adjust the text color */
+  font-weight: bold;
 }
