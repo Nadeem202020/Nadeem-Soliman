@@ -124,14 +124,8 @@
             alt="{{ product.title }}"
             class="product-image"
             data-product-id="{{ product.id }}"
-            width="300"
-            <!--
-            replace
-            with
-            your
-            preferred
-            width
-            --
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
           >
           height="300"
           <!-- replace with your preferred height -->
