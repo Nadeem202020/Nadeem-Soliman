@@ -19,7 +19,10 @@
     endif
   -%}
 
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div
+    class="card-wrapper product-card-wrapper open-popup underline-links-hover"
+    data-product-id="{{ card_product.id }}"
+  >
     <div
       class="
         card card--{{ settings.card_style }}
