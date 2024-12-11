@@ -424,7 +424,7 @@
 }
 
 .banner__box > *:first-child {
-  margin-top: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 749px) {
