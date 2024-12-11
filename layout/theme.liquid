@@ -369,5 +369,11 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <div id="product-modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="modal-close">×</button>
+        <div id="product-modal-content"></div>
+      </div>
+    </div>
   </body>
 </html>
