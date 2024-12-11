@@ -460,7 +460,7 @@
   background-color: black; /* Button background */
   color: white; /* Text color */
   border: none; /* Removes border */
-  padding: 6px 12px; /* Button padding */
+  padding: 3px 12px; /* Button padding */
   font-size: 16px; /* Font size */
   font-weight: bold; /* Bold text */
   cursor: pointer; /* Pointer cursor on hover */
