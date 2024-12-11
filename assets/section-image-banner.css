@@ -460,20 +460,21 @@
 }
 
 .banner__buttons {
-  background-color: black; /* Button background */
-  color: white; /* Text color */
-  border: none; /* Removes border */
-  padding: 1px 2px; /* Button padding */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Bold text */
-  cursor: pointer; /* Pointer cursor on hover */
-  display: inline-flex; /* Aligns text and arrow inline */
-  align-items: center; /* Centers items vertically */
-  justify-content: center; /* Centers items horizontally */
-  gap: 15px; /* Space between text and arrow */
+  all: unset;
+  background-color: black;
+  color: white;
+  padding: 1px 2px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   width: 180px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .banner__buttons .arrow {
   font-size: 20px; /* Arrow size */
 }
