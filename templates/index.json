@@ -59,7 +59,7 @@
       "settings": {}
     },
     "featured_collection": {
-      "type": "featured-collection",
+      "type": "grid",
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
