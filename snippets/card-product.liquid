@@ -19,10 +19,7 @@
     endif
   -%}
 
-  <div
-    class="card-wrapper product-card-wrapper open-popup underline-links-hover"
-    data-product-id="{{ card_product.id }}"
-  >
+  <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
         card card--{{ settings.card_style }}
@@ -146,7 +143,6 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
-
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
             {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
