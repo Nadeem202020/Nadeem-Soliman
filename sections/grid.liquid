@@ -1,5 +1,6 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 
@@ -9,6 +10,7 @@
 
 {%- unless section.settings.quick_add == 'none' -%}
   {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
 
@@ -90,8 +92,7 @@
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="grid__item open-popup{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            data-product-id="{{ product.id }}"
+            class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
               style="--animation-order: {{ forloop.index }};"
@@ -161,63 +162,11 @@
         </div>
       {%- endif -%}
     </slider-component>
-
     {% if section.settings.image_shape == 'arch' %}
       {{ 'mask-arch.svg' | inline_asset_content }}
     {%- endif -%}
   </div>
 </div>
-
-<div id="product-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-popup">×</span>
-    <div id="popup-product-details"></div>
-  </div>
-</div>
-
-<script>
-  const productCards = document.querySelectorAll('.open-popup');
-  const popup = document.getElementById('product-popup');
-  const popupContent = document.getElementById('popup-product-details');
-  const closeButton = document.querySelector('.close-popup');
-
-  productCards.forEach(card => {
-    card.addEventListener('click', (event) => {
-      event.preventDefault();
-      const productId = card.dataset.productId;
-      fetch(`/products/${productId}.js`)
-        .then(response => response.json())
-        .then(product => {
-          popupContent.innerHTML = `
-            <h2>${product.title}</h2>
-            <img src="${product.featured_image.src}" alt="${product.featured_image.alt}">
-            <p>${product.description}</p>
-            <p>Price: $${product.price}</p>
-            <!-- Add more product details as needed -->
-          `;
-          popup.style.display = "block";
-        })
-        .catch(error => {
-          console.error("Error fetching product data:", error);
-          popupContent.innerHTML = "<p>Error loading product details.</p>";
-          popup.style.display = "block";
-        });
-    });
-  });
-
-  closeButton.addEventListener('click', () => {
-    popup.style.display = "none";
-    popupContent.innerHTML = '';
-  });
-
-  window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-      popup.style.display = "none";
-      popupContent.innerHTML = '';
-    }
-  });
-</script>
-
 {% schema %}
 {
 "name": "t:sections.featured-collection.name",
